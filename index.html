@@ -11,20 +11,35 @@
   </head>
   <body>
     <section id="health-levels">
-      <h2>MONSTER HEALTH</h2>
-      <progress id="monster-health" max="100" value="100">100%</progress>
-      <h2>PLAYER HEALTH<span id="bonus-life">1</span></h2>
-      <progress id="player-health" max="100" value="100">100%</progress>
+      <div class="character-container player-container">
+        <img src="assets/icons/swordman_1.png" alt="Player" class="character-image">
+        <h2>PLAYER HEALTH<span id="bonus-life"><img src="assets/icons/phoenix feather.png" alt="Bonus Life" class="bonus-life-icon"></span></h2>
+        <progress id="player-health" max="100" value="100"></progress>
+      </div>
+      <div class="character-container monster-container">
+        <img src="assets/icons/skeleton_4.png" alt="Monster" class="character-image">
+        <h2>MONSTER HEALTH</h2>
+        <progress id="monster-health" max="100" value="100"></progress>
+      </div>
     </section>
+      
     <section id="controls">
       <button id="attack-btn">
-        <img src="assets/icons/w_longsword_copper.png" alt="ATTACK">
+        <img src="assets/icons/iron sword.png" alt="Attack" class="button-icon">
+        ATTACK
       </button>
       <button id="strong-attack-btn">
-        <img src="assets/icons/w_broadsword_copper.png" alt="STRONG ATTACK">
+        <img src="assets/icons/gold sword.png" alt="Strong Attack" class="button-icon">
+        STRONG ATTACK
       </button>
-      <button id="heal-btn">HEAL</button>
-      <button id="log-btn">SHOW LOG</button>
+      <button id="heal-btn">
+        <img src="assets/icons/basic health potion.png" alt="Heal" class="button-icon">
+        HEAL
+      </button>
+      <button id="basic-log-btn">
+        <img src="assets/icons/basic book.png" alt="Show Log" class="button-icon">
+        SHOW LOG
+      </button>
     </section>
   </body>
 </html>

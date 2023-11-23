@@ -9,13 +9,15 @@ body {
 h2 {
   font-size: 1.25rem;
   margin: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
 }
 
 progress {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 80%;
+  width: 100%;
   height: 2rem;
   color: #ff0062;
   border: 1px solid #a927f5;
@@ -39,8 +41,8 @@ progress[value]::-moz-progress-bar {
 
 button {
   font: inherit;
-  background: #ff0062;
-  border: 1px solid #ff0062;
+  background: #274cf580;
+  border: 1px solid #274cf580;
   color: white;
   padding: 1rem 2rem;
   border-radius: 6px;
@@ -77,10 +79,63 @@ button:active {
 #bonus-life {
   font-weight: bold;
   color: white;
-  background: #ff0062;
-  border: 1px solid #ff0062;
+  background: white;
+  border: 1px solid white;
   padding: 0.15rem 0.5rem;
   border-radius: 10px;
   text-align: center;
   margin: 0 0.5rem;
+}
+
+#health-levels {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  margin: 2rem auto;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  background: white;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.character-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.character-image {
+  width: 80px; 
+  height: auto;
+  margin-bottom: 0.5rem; 
+}
+
+button {
+  position: relative; 
+  padding-left: 50px; 
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+}
+
+.button-icon {
+  position: absolute; 
+  left: 12px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  width: 30px; 
+  height: auto; 
+}
+
+#player-image, #monster-image {
+  width: 50px; 
+  height: auto;
+  align-self: flex-start; 
+}
+
+#bonus-life img {
+  width: 30px; 
+  height: auto;
+  margin-left: 0.5rem;
 }
