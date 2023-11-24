@@ -23,7 +23,15 @@ function getMaxLifeValues() {
   return parsedValue
 }
 
-let chosenMaxLife = getMaxLifeValues();
+let chosenMaxLife;
+
+try {
+  chosenMaxLife = getMaxLifeValues();
+} catch (error) {
+  console.log(error);
+  chosenMaxLife = 100;
+  alert('You entered an invalid value, default value of 100 was used for the maximum life.');
+}
 
 let battleLog = [];
 
